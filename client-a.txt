@@ -2,3 +2,14 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+declare variable random_number, where random_number is an integer greater than or equal to 1 and less than or equal to 10
+print("guess a number between 1 and 10")
+Allow user to input an integer between 1 and 10. Declare this as variable guess
+if guess=random_number, then print("Correct!")
+else if guess!=random_number then print("Incorrect. You have 2 more guesses.") and allow user to input another integer.
+Update the value of guess
+if guess=random_number, then print("Correct!")
+else if guess!=random_number then print("Incorrect. You have 1 more guess.") and allow user to input another integer.
+if guess=random_number, then print("Correct!")
+else if guess!=random_number then print("Incorrect. Play again?")
+

@@ -1,4 +1,20 @@
 # Client Task C #
 # Add your pseudocode to this file below this line: #
+
+
+
+Declare max_Products to 50
+Declare current_Count to 2
+Print("Counting packages from 2 to 50 (counting by twos):")
+
+
+-- Loop to Count by Twos
+
+WHILE current_Count is less than or equal to maxProducts DO
+PRINT current_Count
+INCREMENT current_Count by 2 /*each time a product is scanned*/
+END 
+
+Print("Case full.")
 # ------------------------------------------------- #
 

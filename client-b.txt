@@ -2,3 +2,47 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+
+Declare warehouse_Width
+Declare warehouse_Height
+Declare current_Location AS (startX, startY)
+Declare target_Location AS (targetX, targetY)
+
+FUNCTION calculateDistance(pointA, pointB)
+    RETURN ABS(pointA.x - pointB.x) + ABS(pointA.y - pointB.y)
+
+
+FUNCTION getNextStep(current_Location, target_Location)
+    IF current_Location.x < target_Location.x THEN
+        RETURN (current_Location.x + 1, current_Location.y) // Move East
+    ELSE IF current_Location.x > target_Location.x THEN
+        RETURN (current_Location.x - 1, current_Location.y) // Move West
+    ELSE IF current_Location.y < target_Location.y THEN
+        RETURN (current_Location.x, current_Location.y + 1) // Move North
+    ELSE IF current_Location.y > target_Location.y THEN
+        RETURN (current_Location.x, current_Location.y - 1) // Move South
+    ELSE
+        RETURN current_Location // Already at target
+
+
+WHILE current_Location != target_Location DO
+   Print("Current Location: "), currentLocation
+   Print("Target Location: "), targetLocation
+
+    
+    nextStep = getNextStep(current_Location, target_Location)
+
+ 
+    current_Location = next_Step
+
+
+END WHILE
+
+Print("You have arrived at your target location!")
+
+END
+
+
+# ------------------------------------------------- #
+
+
